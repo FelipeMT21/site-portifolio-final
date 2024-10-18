@@ -40,3 +40,32 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Node.js
+node_modules/
+dist/
+.angular/
+.env
+*.local
+
+# Java
+target/
+build/
+*.jar
+*.war
+*.class
+
+# IDEs
+.idea/
+.vscode/
+.project
+.classpath
+.settings/
+*.iml
+
+# Sistema Operacional
+.DS_Store
+
+# Logs
+*.log
+
