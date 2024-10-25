@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --color-gray: #b0b8c4;
+  --color-dark: #101418B3;
+  --color-dark2: #141A1F;
+  --color-dark-angular: #0f0f11;
+  --color-white: white;
+  --color-blue-logo: #04bacf;
+  --color-blue-logo2: #366994;
+  --color-blue-logo3: #66d6e2;
+  --box-shadow: #1F262E;
+  --color-whatsapp: #25d366;
+  --color-text: oklch(0.709 0.015 304.04);
+}
+
+body {
+  background-color: var(--color-dark-angular);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background: none;
+  border: none;
+}

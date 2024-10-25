@@ -1,0 +1,43 @@
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sidebar-cancel {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.sidebar-menu {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sidebar-logo {
+    padding: 0;
+}
+
+.sidebar-menu a {
+    height: 100%;
+    padding: 16px 8px;
+    text-decoration: none;
+    color: var(--color-text);
+    transition: .5s;
+}
+
+.sidebar-menu a:hover {
+    color: var(--color-white);
+}
+
+li {
+    height: 46px;
+}
+

@@ -1,0 +1,86 @@
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.25rem 6.25rem;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar.active {
+    animation: slideInDown 0.5s forwards;
+}
+
+/* .navbar.desactive {
+    animation: slideOutUp 0.5s forwards;
+} */
+
+.sidebar {
+    display: none;
+    background-color: transparent;
+    box-shadow: 0.5px 1px 3px oklch(0.709 0.015 304.04);
+    padding: 16px 0 32px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: auto;
+    z-index: 999;
+}
+
+.sidebar.active {
+    animation: slideInRight 0.5s forwards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* .sidebar.desactive {
+    animation: slideOutUp 0.5s forwards;
+} */
+
+/* Animação para a logo e menu sumirem para cima */
+@keyframes slideOutUp {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  }
+  
+  /* Animação para a logo e menu aparecerem de baixo para cima */
+  @keyframes slideInDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+  }
+
+    /* Animação para a sidebar aparacer da esquerda para direita */
+    @keyframes slideInRight {
+        from { transform: translateX(-100%); }
+        to { transform: translateX(0); }
+      }
+
+@media (max-width: 768px) {
+    #header {
+        padding: 12px 16px;
+    }
+
+    .navbar.desactive {
+        display: none;
+    }
+
+    .sidebar {
+        display: block;
+    }
+}

@@ -1,0 +1,53 @@
+button {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    cursor: pointer;
+}
+
+.navbar-logo {
+    font-size: 32px;
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar-hamburguer {
+    display: none;
+    color: var(--color-white);
+    font-size: 24px;
+}
+
+.navbar-menu a {
+    position: relative;
+    font-size: 1.125rem;
+    color: var(--color-white);
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 2.5rem;
+}
+
+.navbar-menu a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 0.125rem;
+    background-color: var(--color-white);
+    transition: .3s;
+}
+
+.navbar-menu a:hover::before {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar-hamburguer {
+        display: block;
+    }
+}

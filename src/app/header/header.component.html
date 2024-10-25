@@ -1,0 +1,8 @@
+<header id="header">
+        <app-navbar class="navbar" [isMenuOpen]="isMenuOpen()" (menuToggle)="handleMenuToggle($event)"
+                [class.active]="!isMenuOpen()" [class.desactive]="isMenuOpen()" />
+        @if (isMenuOpen()) {
+        <app-sidebar class="sidebar" [isMenuOpen]="isMenuOpen()" (menuToggle)="handleMenuToggle($event)"
+                [class.active]="isMenuOpen()" [class.desactive]="!isMenuOpen()" />
+        }
+</header>
