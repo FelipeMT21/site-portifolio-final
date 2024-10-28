@@ -9,6 +9,7 @@ nav {
     color: var(--color-white);
     text-decoration: none;
     font-size: 24px;
+    margin-bottom: 6rem;
 }
 
 .sidebar-menu {

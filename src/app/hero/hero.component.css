@@ -1,0 +1,88 @@
+.hero-background {
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    /* height: calc(100vh - 120px); */
+    height: 100vh;
+    width: 80%;
+    /* background-color: seagreen; */
+    align-items: center;
+    margin: auto;
+}
+
+.hero-background div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    font-size: 2.5rem;
+}
+
+.hero-background h1, h2 {
+    background: linear-gradient(270deg, var(--color-blue-logo), var(--color-blue-logo2), var(--color-blue-logo));
+    background-size: 200% 200%;
+    background-clip: text;
+    color: transparent;
+    animation: moveGradient 3s linear infinite;
+}
+
+.hero-content {
+    width: auto;
+}
+
+.btn-projects {
+    cursor: pointer;
+    position: relative;
+    border-radius: .25rem;
+    font-size: 1rem;
+    padding: 1rem 1.75rem;
+    width: max-content;
+    background: var(--color-blue-logo);
+    margin-top: 4rem;
+    color: white;
+    animation: slideIn 0.5s forwards;
+}
+
+.btn-projects:hover {
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 1rem;
+    background-color: white;
+    color: var(--color-dark);
+    transition: .5s;
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0%;
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes moveGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%;}
+}
+
+@media (max-width: 768px) {
+    .hero-background {
+        height: 100%;
+        height: calc(100vh - 120px);
+    }
+
+    .hero-background div {
+        font-size: 1rem;
+    }
+}

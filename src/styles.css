@@ -12,10 +12,12 @@
   --box-shadow: #1F262E;
   --color-whatsapp: #25d366;
   --color-text: oklch(0.709 0.015 304.04);
+  --gray-1000: oklch(16.93% .004 285.95)
 }
 
 body {
   background-color: var(--color-dark-angular);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 * {
@@ -27,4 +29,5 @@ body {
 button {
   background: none;
   border: none;
+  font-weight: 600;
 }
