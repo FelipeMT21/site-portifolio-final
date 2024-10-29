@@ -1,0 +1,75 @@
+.about-background {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    min-height: 500px;
+    height: 80vh;
+}
+
+.about-me {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-bottom: 5rem;
+    font-size: 2rem;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.perfil {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.perfil:hover {
+    transform: scale(1.1); /* aumenta ligeiramente o tamanho */
+}
+
+
+.description {
+    width: 40%;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-pessoal {
+    margin: 0.5rem 0px;
+    display: flex;
+    gap: 2rem;
+}
+
+.about-pessoal p {
+    display: inline-block;
+}
+
+.about-social {
+    display: flex;
+    justify-content: right;
+}
+
+.about-social a {
+    fill: var(--color-white);
+    transition: 1s;
+}
+
+.about-social a:hover {
+    fill: var(--color-blue-logo);
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .description {
+        width: 100%;
+    }
+}

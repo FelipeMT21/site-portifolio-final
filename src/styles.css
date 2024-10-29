@@ -31,3 +31,17 @@ button {
   border: none;
   font-weight: 600;
 }
+
+h1, h2, span {
+  background: linear-gradient(270deg, var(--color-blue-logo), var(--color-blue-logo2), var(--color-blue-logo));
+  background-size: 200% 200%;
+  background-clip: text;
+  color: transparent;
+  animation: moveGradient 3s linear infinite;
+}
+
+@keyframes moveGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%;}
+}
