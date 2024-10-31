@@ -32,7 +32,7 @@ button {
   font-weight: 600;
 }
 
-h1, h2, span {
+h1, h2, h3, span {
   background: linear-gradient(270deg, var(--color-blue-logo), var(--color-blue-logo2), var(--color-blue-logo));
   background-size: 200% 200%;
   background-clip: text;

@@ -8,10 +8,9 @@
     height: 80vh;
 }
 
-.about-me {
+.about-title {
     padding-top: 32px;
     padding-bottom: 32px;
-    margin-bottom: 5rem;
     font-size: 2rem;
 }
 
@@ -20,6 +19,7 @@
     align-items: center;
     justify-content: center;
     gap: 5rem;
+    margin: auto 0;
 }
 
 .perfil {
