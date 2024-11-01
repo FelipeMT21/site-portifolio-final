@@ -1,0 +1,32 @@
+.skills-title {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.skills-items {
+    display: flex;
+    justify-content: center;
+    margin: 5rem auto;
+    gap: 6.5rem;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.skill img {
+    height: 90px;
+    width: 90px;
+}
+
+.skill img:hover {
+    height: 90px;
+    width: 90px;
+    transform: scale(1.1);
+}
+
+.skill h3 {
+    margin: 1rem 0px;
+}
+
+

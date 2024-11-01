@@ -25,6 +25,11 @@
     text-align: center;
 }
 
+#skills {
+    height: 100%;
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     #header {
         padding: 12px 16px;
