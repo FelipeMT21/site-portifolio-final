@@ -2,7 +2,6 @@
     padding-top: 32px;
     padding-bottom: 32px;
     font-size: 2rem;
-    margin-bottom: 3rem;
 }
 
 .projects-items, .projects-items2 {
@@ -54,6 +53,7 @@ p {
     transition: .5s;
 }
 
+/* Celulares médios e pequenos (480px) */
 @media (max-width: 768px) {
     .projects-items, .projects-items2 {
         flex-direction: column;
@@ -61,6 +61,23 @@ p {
     }
 
     p {
-        width: 30rem;
+        width: 100%;
+    }
+
+    .projects-title {
+        padding-top: 96px;
+        padding-bottom: 96px;
     }
 }
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {}
+
+/* Laptops e desktops pequenos */
+@media (min-width: 1025px) and (max-width: 1200px) {}
+
+/* Desktops médios */
+@media (min-width: 1201px) and (max-width: 1600px) {}
+
+/* Desktops grandes */
+@media (min-width: 1601px) {}

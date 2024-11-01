@@ -1,14 +1,14 @@
 .hero-background {
     display: flex;
     flex-direction: column;
-    min-height: 500px;
     height: 100vh;
     width: 80%;
     align-items: center;
     margin: auto;
 }
 
-.hero-background div {
+.hero-content {
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,12 +16,7 @@
     font-size: 2.5rem;
 }
 
-.hero-content {
-    width: auto;
-}
-
 .btn-projects {
-    cursor: pointer;
     position: relative;
     border-radius: .25rem;
     font-size: 1rem;
@@ -60,13 +55,25 @@
     }
 }
 
+/* Celulares médios e pequenos (480px) */
 @media (max-width: 768px) {
-    .hero-background {
-        height: 100%;
-        height: calc(100vh - 120px);
-    }
-
-    .hero-background div {
+    .hero-content {
         font-size: 1rem;
     }
 }
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero-content {
+        font-size: 2rem;
+    }
+}
+
+/* Laptops e desktops pequenos */
+@media (min-width: 1025px) and (max-width: 1200px) {}
+
+/* Desktops médios */
+@media (min-width: 1201px) and (max-width: 1600px) {}
+
+/* Desktops grandes */
+@media (min-width: 1601px) {}

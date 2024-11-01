@@ -1,0 +1,33 @@
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 32px 0px;
+    background-color: var(--color-dark);
+    /* background-color: seagreen; */
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+}
+
+.copyright p {
+    color: var(--color-gray);
+    font-size: .75rem;
+    line-height: 1.5;
+}
+
+.about-social {
+    display: flex;
+    justify-content: right;
+    gap: 0.5rem;
+}
+
+.about-social a {
+    fill: var(--color-white);
+    transition: 1s;
+}
+
+.about-social a:hover {
+    fill: var(--color-blue-logo);
+}
