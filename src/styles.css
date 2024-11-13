@@ -35,6 +35,7 @@ button {
   background: none;
   border: none;
   font-weight: 600;
+  animation: slideIn 1.5s forwards;
 }
 
 h1, h2, h3, span {
@@ -49,4 +50,13 @@ h1, h2, h3, span {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%;}
+}
+
+@keyframes slideIn {
+  from {
+      opacity: 0%;
+  }
+  to {
+      opacity: 100%;
+  }
 }

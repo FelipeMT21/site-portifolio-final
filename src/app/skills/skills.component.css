@@ -34,7 +34,11 @@
     .skills-title {
         padding-top: 96px;
         padding-bottom: 96px;
-        /* margin: 3rem 0px; */
+    }
+
+    .skill img {
+        height: 45px;
+        width: 45px;
     }
 }
 

@@ -1,3 +1,9 @@
+.projects-title {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 2rem;
+}
+
 .projects-items, .projects-items2 {
     display: flex;
     width: 80%;
