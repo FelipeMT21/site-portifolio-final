@@ -4,6 +4,24 @@
     font-size: 2rem;
 }
 
+.loading-spinner {
+    border: 8px solid var(--color-gray-light);
+    border-top: 1.5px solid var(--color-blue-logo);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg); /* Começa sem rotação */
+    }
+    100% {
+        transform: rotate(360deg); /* Completa uma rotação completa */
+    }
+}
+
 .projects-items, .projects-items2 {
     display: flex;
     width: 80%;

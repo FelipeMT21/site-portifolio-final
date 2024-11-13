@@ -1,0 +1,14 @@
+<h2 class="projects-title">PROJETOS</h2>
+
+@if (isFetching()) {
+    <!-- <p class="fallback-text">Buscando Projetos...</p> -->
+    <div class="loading-spinner"></div>
+}
+
+@if (projects()) {
+<app-projects [projects]="projects()!" />
+} @else if (projects()?.length === 0) {
+<p class="fallback-text">Infelizmente nenhum projeto foi encontrado!</p>
+}
+
+<button class="btn-projects">Todos Projetos</button>

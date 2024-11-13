@@ -3,7 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { HeroComponent } from './hero/hero.component';
 import { AboutComponent } from './about/about.component';
-import { AvailableProject } from './projects/available-projects/available-places.component';
+import { AvailableProject } from './projects/available-projects/available-projects.component';
 import { SkillsComponent } from "./skills/skills.component";
 import { FooterComponent } from "./footer/footer.component";
 
