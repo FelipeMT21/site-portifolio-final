@@ -37,6 +37,16 @@ p {
     width: 25rem;
 }
 
+a {
+    color: inherit;
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--color-blue-logo);
+    transition: .5s;
+}
+
 .btn-projects {
     cursor: pointer;
     border-radius: .25rem;
