@@ -1,4 +1,5 @@
-.projects-items, .projects-items2 {
+.projects-items,
+.projects-items2 {
     display: flex;
     width: 80%;
     margin: 4rem auto;
@@ -15,9 +16,17 @@
 img {
     width: 325px;
     height: 225px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
     /* background-color: var(--color-white);
     border-radius: 10px;
     box-shadow: -10px 10px var(--color-blue-logo); */
+}
+
+img:hover {
+    transform: scale(1.1) rotate(5deg);
+    filter: brightness(1.2) sepia(0.3);
 }
 
 h3 {
@@ -49,7 +58,9 @@ p {
 
 /* Celulares médios e pequenos (480px) */
 @media (max-width: 768px) {
-    .projects-items, .projects-items2 {
+
+    .projects-items,
+    .projects-items2 {
         flex-direction: column;
         width: 90%;
     }
