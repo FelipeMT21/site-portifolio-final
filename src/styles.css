@@ -46,6 +46,12 @@ h1, h2, h3, span {
   animation: moveGradient 3s linear infinite;
 }
 
+hr {
+  margin: 0;
+  border: solid rgba(194, 224, 255, .08);
+  border-width: 0 0 thin;
+}
+
 @keyframes moveGradient {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }

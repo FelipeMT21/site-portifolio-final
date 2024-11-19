@@ -3,5 +3,7 @@ export interface Project {
     title: string,
     description: string,
     url: string,
+    urlImage: string,
+    urlGit: string,
     date: string
 }

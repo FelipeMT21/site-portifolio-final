@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
+import { skills } from '../models/skill.data';
+import { skill } from '../models/skill.model';
 
 @Component({
   selector: 'app-skills',
@@ -8,5 +10,5 @@ import { Component } from '@angular/core';
   styleUrl: './skills.component.css'
 })
 export class SkillsComponent {
-
+  skills = signal<skill[]>(skills);
 }

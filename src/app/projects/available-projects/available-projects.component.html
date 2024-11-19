@@ -10,9 +10,9 @@
 }
 
 @if (projects() && projects()!.length > 0) {
-<app-projects [projects]="projects()!" />
+<app-projects [projects]="allProjects() ? projects()! : projects()!.slice(0,4) " />
 } @else if (projects()?.length === 0 && !isFetching()) {
 <p class="fallback-text">Infelizmente nenhum projeto foi encontrado!</p>
 }
 
-<!-- <button class="btn-projects">Todos Projetos</button> -->
+<button class="btn-projects" (click)="onAllProjects()">{{ allProjects() ? 'Mostrar menos' : 'Mostrar mais' }}</button>

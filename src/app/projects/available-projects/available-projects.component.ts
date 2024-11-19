@@ -16,6 +16,7 @@ export class AvailableProject implements OnInit {
   projects = signal<Project[] | undefined>(undefined);
   isFetching = signal<boolean>(false);
   error = signal<string | null>(null);
+  allProjects = signal<boolean>(false);
   private projectService = inject(ProjectService);
   destroyRef = inject(DestroyRef);
 
@@ -34,5 +35,10 @@ export class AvailableProject implements OnInit {
       }
     });
     this.destroyRef.onDestroy(() => {subscription.unsubscribe()})
+  }
+
+  onAllProjects() {
+    this.allProjects.set(!this.allProjects());
+    console.log(this.allProjects());
   }
 }

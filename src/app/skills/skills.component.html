@@ -1,39 +1,10 @@
+<hr>
 <h2 class="skills-title">HABILIDADES</h2>
 <div class="skills-items">
-    <div class="skill">
-        <img src="java.png" alt="">
-        <h3>JAVA</h3>
-    </div>
-    <div class="skill">
-        <img src="java.png" alt="">
-        <h3>JAVA</h3>
-    </div>
-    <div class="skill">
-        <img src="java.png" alt="">
-        <h3>JAVA</h3>
-    </div>
-    <div class="skill">
-        <img src="java.png" alt="">
-        <h3>JAVA</h3>
-    </div>
-    <div class="skill">
-        <img src="java.png" alt="">
-        <h3>JAVA</h3>
-    </div>
-    <div class="skill">
-        <img src="java.png" alt="">
-        <h3>JAVA</h3>
-    </div>
-    <div class="skill">
-        <img src="java.png" alt="">
-        <h3>JAVA</h3>
-    </div>
-    <div class="skill">
-        <img src="java.png" alt="">
-        <h3>JAVA</h3>
-    </div>
-    <div class="skill">
-        <img src="java.png" alt="">
-        <h3>JAVA</h3>
-    </div>
+    @for (skill of skills(); track skill.title) {
+        <div class="skill">
+            <img [src]="skill.image" alt="">
+            <h3>{{ skill.title }}</h3>
+        </div>
+    }
 </div>
