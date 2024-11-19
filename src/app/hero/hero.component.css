@@ -13,7 +13,20 @@
     flex-direction: column;
     align-items: center;
     margin: auto;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+}
+
+span {
+    background: linear-gradient(270deg, var(--color-white), var(--color-gray), var(--color-white));
+    background-size: 200% 200%;
+    background-clip: text;
+    color: transparent;
+    animation: moveGradient 3s linear infinite;
+}
+
+p {
+    font-size: 1.1rem;
+    color: var(--color-gray);
 }
 
 .btn-projects {

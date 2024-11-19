@@ -1,4 +1,4 @@
-import { Component, input, output } from '@angular/core';
+import { Component, inject, input, output, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-sidebar',
@@ -10,6 +10,14 @@ import { Component, input, output } from '@angular/core';
 export class SidebarComponent {
   isMenuOpen = input<boolean>();
   menuToggle = output<boolean>()
+  render = inject(Renderer2)
+
+  scrollTo(sectionId: string) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 
   onToggleMenu() {
     this.menuToggle.emit(!this.isMenuOpen());
