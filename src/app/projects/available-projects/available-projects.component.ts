@@ -24,7 +24,9 @@ export class AvailableProject implements OnInit {
     this.isFetching.set(true);
     const subscription = this.projectService.loadAvailableProjects().subscribe({
       next: (resData) => {
-        this.projects.set(resData);
+        const transformedData = resData.map((project: Project) => ({...project, date: new Date(project.date)})) // Transformando de string para Date
+        this.projects.set(transformedData);
+        // this.projects.set(resData);
         this.error.set(null);
       },
       error: (error: Error) => {

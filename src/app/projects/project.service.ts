@@ -9,11 +9,12 @@ import { catchError, delay, throwError } from 'rxjs';
 export class ProjectService {
   private httpClient = inject(HttpClient);
   private projects = signal<Project[]>([]);
+  private urlLocal = 'http://localhost:8080/projects';
 
   loadProjects = this.projects.asReadonly();
 
   loadAvailableProjects() {
-    return this.fetchProjects('http://localhost:8080/projects');
+    return this.fetchProjects(this.urlLocal);
   }
 
   loadAllAvailableProjects() {}

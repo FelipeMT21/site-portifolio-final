@@ -5,5 +5,5 @@ export interface Project {
     url: string,
     urlImage: string,
     urlGit: string,
-    date: string
+    date: Date
 }

@@ -38,8 +38,16 @@ button {
   animation: slideIn 1.5s forwards;
 }
 
-h1, h2, h3, span {
+h1, h2, h3 {
   background: linear-gradient(270deg, var(--color-blue-logo), var(--color-blue-logo2), var(--color-blue-logo));
+  background-size: 200% 200%;
+  background-clip: text;
+  color: transparent;
+  animation: moveGradient 3s linear infinite;
+}
+
+span {
+  background: linear-gradient(270deg, var(--color-white), var(--color-gray), var(--color-white));
   background-size: 200% 200%;
   background-clip: text;
   color: transparent;

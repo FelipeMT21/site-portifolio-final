@@ -16,17 +16,14 @@
     font-size: 1.5rem;
 }
 
-span {
-    background: linear-gradient(270deg, var(--color-white), var(--color-gray), var(--color-white));
-    background-size: 200% 200%;
-    background-clip: text;
-    color: transparent;
-    animation: moveGradient 3s linear infinite;
+h1 {
+    text-align: center;
 }
 
 p {
     font-size: 1.1rem;
     color: var(--color-gray);
+    text-align: center;
 }
 
 .btn-projects {
@@ -60,7 +57,21 @@ p {
 }
 
 /* Celulares médios e pequenos (480px) */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+    .hero-background {
+        height: 85vh;
+    }
+    .hero-content {
+        font-size: 0.8rem;
+    }
+
+    p {
+        font-size: 0.5rem;
+    }
+}
+
+/* Celulares médios e pequenos (480px) */
+@media (min-width: 481px) and (max-width: 768px) {
     .hero-content {
         font-size: 1rem;
     }
