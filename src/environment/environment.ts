@@ -1,3 +1,3 @@
 export const environment = {
-    apiUrl: 'https://projects-springboot3-jpa.onrender.com/projects' // URL para produção
+    apiUrl: (window as any)['API_URL'] || 'https://projects-springboot3-jpa.onrender.com/projects' // URL para produção
 }
