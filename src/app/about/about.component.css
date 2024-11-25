@@ -67,7 +67,7 @@
 /* Celulares médios e pequenos (480px) */
 @media (max-width: 768px) {
     .about-background {
-        height: 100vh;
+        height: 100%;
     }
 
     .about-content {
