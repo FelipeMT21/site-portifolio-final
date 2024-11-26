@@ -1,9 +1,9 @@
 @for (project of projects(); track project.id; let i = $index) {
     <div [class.projects-items]="i % 2 === 0" [class.projects-items2]="i % 2 !== 0">
-        <a [href]="project.url"><img [src]="project.urlImage" alt=""></a>
+        <a [href]="project.url" [attr.target]="'_blank'"><img [src]="project.urlImage" alt=""></a>
         <div>
             <h3>{{ project.title }} <span>({{ project.date | date:'MM/yyyy':'pt-BR'  }})</span></h3>
-            <p>{{ project.description }} <a [href]="project.urlGit">{{ project.title }}</a>.</p>
+            <p>{{ project.description }} <a [href]="project.urlGit" [attr.target]="'_blank'">{{ project.title }}</a>.</p>
         </div>
     </div>
 }
