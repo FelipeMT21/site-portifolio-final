@@ -22,7 +22,32 @@
     margin: auto 0;
 }
 
+.circle-background {
+    padding: 0.15rem;
+    border-radius: 50%;
+    background: linear-gradient(270deg, var(--color-blue-logo), var(--color-blue-logo2), var(--color-blue-logo)); /* Degradê inicial */
+    background-size: 300% 300%;
+    animation: gradient-animation 3s infinite alternate;
+    z-index: -1;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
 .perfil {
+    border-radius: 50%; /* Torna a imagem circular */
+    object-fit: cover;
+    z-index: 1;
+    border: 1px solid var(--color-white); /* Opcional: borda para destacar */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
