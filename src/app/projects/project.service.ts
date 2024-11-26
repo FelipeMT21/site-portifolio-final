@@ -16,7 +16,7 @@ export class ProjectService {
   loadProjects = this.projects.asReadonly();
 
   loadAvailableProjects() {
-    return this.fetchProjects(this.urlLocal);
+    return this.fetchProjects(this.url);
   }
 
   loadAllAvailableProjects() {}
