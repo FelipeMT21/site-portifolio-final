@@ -56,7 +56,7 @@ p {
     }
 }
 
-/* Celulares médios e pequenos (480px) */
+/* Celulares pequenos (480px) */
 @media (max-width: 480px) {
     .hero-background {
         height: 85vh;
@@ -70,7 +70,7 @@ p {
     }
 }
 
-/* Celulares médios e pequenos (480px) */
+/* Celulares médios */
 @media (min-width: 481px) and (max-width: 768px) {
     .hero-content {
         font-size: 1rem;

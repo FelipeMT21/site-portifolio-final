@@ -6,11 +6,12 @@ import { AboutComponent } from './about/about.component';
 import { AvailableProject } from './projects/available-projects/available-projects.component';
 import { SkillsComponent } from "./skills/skills.component";
 import { FooterComponent } from "./footer/footer.component";
+import { WhatsappButtonComponent } from "./shared/whatsapp-button/whatsapp-button.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HeaderComponent, HeroComponent, AboutComponent, AvailableProject, SkillsComponent, FooterComponent],
+  imports: [HeaderComponent, HeroComponent, AboutComponent, AvailableProject, SkillsComponent, FooterComponent, WhatsappButtonComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
