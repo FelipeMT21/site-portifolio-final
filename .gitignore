@@ -70,5 +70,3 @@ build/
 *.log
 
 # Ignorar os arquivos de environment
-src/environments/environment.ts
-src/environments/environment.prod.ts
