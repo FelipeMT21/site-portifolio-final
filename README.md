@@ -1,27 +1,107 @@
-# SitePortifolioFinal
+# Felipe Site Portifólio 
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/FelipeMT21/site-portifolio-final/blob/main/LICENSE) 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.4.
+# Sobre o projeto
 
-## Development server
+Acesse: [Felipe Site Portfólio](https://felipedev.familiaweb.com.br/)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Felipe Site Portfólio é uma aplicação web full-stack construída para aplicar todo o conhecimento adquirido no meu desenvolvimento como Desenvolvedor.
 
-## Code scaffolding
+O site funciona como um portfólio online, apresentando um pouco sobre mim e os projetos que desenvolvi ao longo da minha jornada. Seu front-end foi desenvolvido utilizando o framework Angular, hospedado na Hostinger, enquanto o back-end (API) foi construído em Java 21 com Spring Boot e Maven, hospedado na EC2 da AWS. O banco de dados foi implementado no MySQL, também hospedado na Hostinger.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Atualmente, o site está em desenvolvimento, mas já cumpre a função principal de apresentar informações sobre mim e meus projetos. 😉
 
-## Build
+## Layout mobile
+![Mobile 1](https://github.com/FelipeMT21/assets/blob/main/SITE/Public/Mobile/Mobile%20Hero.png) ![Mobile 2](https://github.com/FelipeMT21/assets/blob/main/SITE/Public/Mobile/Mobile%20About.png) ![Mobile 3](https://github.com/FelipeMT21/assets/blob/main/SITE/Public/Mobile/Mobile%20Projects.png) ![Mobile 4](https://github.com/FelipeMT21/assets/blob/main/SITE/Public/Mobile/Mobile%20Skills.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Layout web
+![Web 1](https://github.com/FelipeMT21/assets/blob/main/SITE/Public/Desktop/Desktop%20Hero.png)
 
-## Running unit tests
+![Web 2](https://github.com/FelipeMT21/assets/blob/main/SITE/Public/Desktop/Desktop%20About.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![Web 3](https://github.com/FelipeMT21/assets/blob/main/SITE/Public/Desktop/Desktop%20Projects.png)
 
-## Running end-to-end tests
+![Web 4](https://github.com/FelipeMT21/assets/blob/main/SITE/Public/Desktop/Desktop%20Skills.png)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Modelo conceitual
+![Modelo Conceitual]()
 
-## Further help
+# Tecnologias utilizadas
+## Front end
+- HTML / CSS / TypeScript
+- Angular
+- RxJS
+## Back end
+- Java
+- Spring Boot
+- JPA / Hibernate
+- Maven
+## Implantação em Teste
+- Back end: localhost:8080/projects
+- Front end: localhost:4200
+- Banco de dados H2 ou MySQL  
+## Implantação em produção
+- Back end: EC2 AWS
+- Front end web: Hostinger
+- Banco de dados MySQL: Hostinger
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+# Como executar o projeto
+
+## Back end
+Pré-requisitos: Java 21
+
+```bash
+# Clonar o repositório
+HTTPS: git clone https://github.com/FelipeMT21/projects-springboot3-jpa.git
+SSH: git clone git@github.com:FelipeMT21/projects-springboot3-jpa.git
+
+# Escolha uma IDE para editar. Utilizando IDE Eclipse:
+# Entre na pasta do projeto back-end
+projects-springboot3-jpa/
+
+# Acesse a classe CorsConfig
+Sinta-se à vontade para excluir os links em allowedOrigins e adicionar o link do seu front-end para liberar o acesso das requisições front-end para o back-end.
+
+# Acesse a classe ProjectResources
+Faça a mesma alteração em @CrossOrigin(origins = seu-link-frontend)
+
+# Prepare o banco na aplicação
+# H2
+Vá em src/main/resources/application.properties e mude 'dev' para 'test' (isso ativará a application-test.properties).
+spring.profiles.active=test
+
+# A classe TestConfig cria os dados de teste para o banco H2.
+
+# Executar o projeto
+Clique com o botão direito na aplicação e selecione "Run As > Spring Boot App".
+
+# Em seguida, use o link http://localhost:8080/h2-console/ e clique em "Connect" para acessar o banco ou use http://localhost:8080/projects para verificar o funcionamento do método GET.
+
+# Recomendo utilizar o Postman para realizar as requisições.
+```
+
+## Front end web
+Pré-requisitos: npm
+
+```bash
+Este projeto foi gerado com o [Angular CLI](https://github.com/angular/angular-cli) versão 18.1.4.
+
+# Clonar o repositório
+HTTPS: git clone https://github.com/FelipeMT21/site-portifolio-final.git
+SSH: git clone git@github.com:FelipeMT21/site-portifolio-final.git
+
+# Entrar na pasta do projeto front-end web com alguma IDE
+cd site-portifolio-final
+
+# Instalar as dependências
+npm install ou npm i
+
+# Executar o projeto
+Execute o comando `ng serve` para iniciar o servidor de desenvolvimento. Acesse `http://localhost:4200/`. A aplicação será recarregada automaticamente caso você faça alguma alteração nos arquivos fonte.
+```
+
+# Autor
+
+João Felipe Martins da Silva
+
+https://www.linkedin.com/in/jo%C3%A3o-felipe-1028aa210
