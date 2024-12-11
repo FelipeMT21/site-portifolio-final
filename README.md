@@ -23,8 +23,21 @@ Atualmente, o site está em desenvolvimento, mas já cumpre a função principal
 
 ![Web 4](https://github.com/FelipeMT21/assets/blob/main/SITE/Public/Desktop/Desktop%20Skills.png)
 
-## Modelo conceitual
-![Modelo Conceitual]()
+## Funcionalidades Implementadas
+- Exibição de informações sobre mim
+- Exibição de projetos realizados
+- Layout responsivo para dispositivos móveis e desktops
+- Integração entre o front-end em Angular e a API em Spring Boot
+
+## Desafios e Soluções
+Durante o desenvolvimento, enfrentei diversos desafios. Um dos mais significativos foi realizar o deploy do backend na EC2 da AWS. Além de estudar detalhadamente a documentação da AWS, precisei iniciar um curso sobre a plataforma para compreender como fazer o deploy da minha API. Durante esse processo, aprendi muito, principalmente sobre segurança de dados, como restringir o acesso da API a determinados IPs, torná-la escalável e evitar quedas de servidores.
+
+Após concluir o deploy, enfrentei outro grande desafio: transformar minha API de HTTP para HTTPS sem utilizar o Route 53. Como já possuía um domínio na Hostinger, optei por integrar a AWS com a Hostinger. Esse processo exigiu um aprofundamento em DNS e na adaptação da minha API para funcionar corretamente com a Hostinger, visto que a maioria das aulas que consultei utilizava o Route 53.
+
+## Planos Futuros
+- Adicionar funcionalidades para gerenciar projetos diretamente na interface do usuário.
+- Melhorar o design com animações e transições mais sofisticadas.
+- Implementar suporte multilíngue (português e inglês), permitindo que o usuário escolha o idioma do site.
 
 # Tecnologias utilizadas
 ## Front end
